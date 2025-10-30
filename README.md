@@ -18,7 +18,9 @@ BASE_PATH={wherever you pointed Zotify at}
 Currently only takes as input `.ogg` files (which is what Spotify uses natively anyway) and only outputs `.ogg` files (with an Opus encoding to save space). This can be changed in the ffmpeg remuxing section at the bottom of main.rs.
 
 # Usage
-Just run `cargo run` in the root directory.
+This uses a nightly Rust feature, #![feature(closure_lifetime_binder)], so you'll have to download it with `rustup toolchain install nightly` and then switch to it for this project with `rustup override set nightly`.
+
+Then, just run `cargo run` in the root directory.
 
 # Dev notes (mostly for me)
 Remuxing with ffmpeg isn't strictly necessary but it does make it easier to adapt to other input/output formats.
