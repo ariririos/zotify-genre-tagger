@@ -1,4 +1,4 @@
-//! Zotify genre tagger
+//! # Zotify genre tagger
 //! Ari Rios <me@aririos.com>
 //! License: MIT
 //!
@@ -31,14 +31,14 @@ use std::{
 use tokio;
 use rand::Rng;
 
-///! ContextOrStream is used to abstract over metadata assigned to a container 
+/// ContextOrStream is used to abstract over metadata assigned to a container 
 ///  or to a specific stream inside that container.
 enum ContextOrStream<'a> {
     Context(&'a Input),
     Stream(&'a Stream<'a>),
 }
 
-///! insert_song_path will insert a [PathBuf] matching a given [TrackId] into paths_by_track_id.
+/// insert_song_path will insert a [PathBuf] matching a given [TrackId] into paths_by_track_id.
 /// `id` is the TrackId as a [String].
 /// `song_result_wrapped` is the [Result] of the song file search.
 /// `found_counter`, `dup_counter`, and `error_counter` are references to success, duplicate, and error counters.
@@ -85,7 +85,7 @@ fn insert_song_path(
     Ok(())
 }
 
-///! chunk_hashmap partitions a [HashMap] into `N` chunks, with the remainder in the final chunk.
+/// chunk_hashmap partitions a [HashMap] into `N` chunks, with the remainder in the final chunk.
 /// The type generics `U` and `V` are the types of HashMap's keys and values, respectively.
 /// `map` is the HashMap to chunk.
 /// `total_len` is the total length of the HashMap if chunking should be based on something other than `map.len()`
