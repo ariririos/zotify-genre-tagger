@@ -1,6 +1,6 @@
-//! # Zotify genre tagger
-//! Ari Rios <me@aririos.com>
-//! License: MIT
+// Zotify genre tagger
+// Ari Rios <me@aririos.com>
+// License: MIT
 //!
 //! For when you forgot to enable genre tagging in Zotify.
 #![feature(closure_lifetime_binder)]
