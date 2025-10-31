@@ -1,5 +1,7 @@
 [package]
 name = "zotify-genre-tagger"
+description = "For when you forgot to enable genre tagging in Zotify"
+license = "MIT"
 version = "0.1.0"
 edition = "2024"
 
